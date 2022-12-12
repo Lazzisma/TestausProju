@@ -26,6 +26,9 @@
     },
     "transformIgnorePatterns": [
       "node_modules/(?!variables/.*)"
+    ],
+    "modulePaths": [
+      "<rootDir>"
     ]
   }
 }
