@@ -28,7 +28,8 @@
       "node_modules/(?!variables/.*)"
     ],
     "modulePaths": [
-      "TestausProju"
+      "src",
+      "node_modules"
     ]
   }
 }
