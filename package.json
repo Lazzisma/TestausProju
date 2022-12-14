@@ -7,7 +7,7 @@
   "scripts": {
     "test-cov": "nyc npm run jest",
     "test-coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage"
   },
   "repository": {
     "type": "git",
