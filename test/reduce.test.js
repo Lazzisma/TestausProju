@@ -7,6 +7,12 @@ test("Reduces collection based on given iterator function. ({ 'a': 1, 'b': 2, 'c
       (result[value] || (result[value] = [])).push(key)
       return result
       }, {}
-    )).toBe({'1': ['a', 'c'], '2': ['b']})
+    )).toEqual({'1': ['a', 'c'], '2': ['b']})
+});
+
+
+test("Reduces collection based on given iterator function. ([1, 2], (sum, n) => sum + n, 0) --> 3", () => {
+  expect(
+    reduce([1, 2], (sum, n) => sum + n, 0)).toBe(3)
 });
 
