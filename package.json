@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "lint": "xo",
+    "test-cov": "nyc npm run jest"
+    "test-coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls",
+    "test": "npm run lint && node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
